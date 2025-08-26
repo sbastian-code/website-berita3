@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>menu kiri</title>
+    <base target="main">
+</head>
+<body bgcolor="red">
+    <p>Jumlah Pengunjung: <span id="visitorCount"></span></p>
+
+<script>
+  function updateVisitorCount() {
+    let count = localStorage.getItem('visitorCount') || 0;
+    count = parseInt(count) + 1;
+    localStorage.setItem('visitorCount', count);
+    document.getElementById('visitorCount').innerText = count;
+  }
+
+  updateVisitorCount();
+</script>
+    <p>Daftar Menu</p>
+    <table border="1" cellpadding="5" cellspacing="0">
+       <tr><td bgcolor="white"><a target="main" href="index copy.html">menu utama</a></td></tr>
+        <tr><td bgcolor="white"><a target="main" href="honda.html">Honda Masuk Sekolah-Sekolah Kejuruan</a></td></tr>
+        <tr><td bgcolor="white"><a target="main" href="cobra.html">"Ular Kobra" Berkeliaran di Jalan Raya</a></td></tr>
+        <tr><td bgcolor="white"><a target="main" href="toyota.html">Toyota Pasarkan FJ Curiser untuk KonsumenJepang</a></td></tr>
+        <tr><td bgcolor="white"><a target="main" href="puetgeo.html">Peugeot 5008 Dipasarkan Rp 475,5 Juta</a></td></tr>
+
+    </table>
+</body>
+</html>
